@@ -40,4 +40,7 @@ public abstract class BasePresenter<V extends IBaseView> {
         }
         return App.getAppContext();
     }
+
+
+
 }

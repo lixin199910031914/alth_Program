@@ -1,7 +1,6 @@
 package com.wd.health.model;
 
 import com.wd.health.contract.ILoginContract;
-import com.wd.health.model.api.IApi;
 import com.wd.health.model.bean.LoginBean;
 import com.wd.health.utils.CommonObserver;
 import com.wd.health.utils.CommonSchedulers;
