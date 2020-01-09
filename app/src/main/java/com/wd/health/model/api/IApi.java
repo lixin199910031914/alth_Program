@@ -17,6 +17,8 @@ public interface IApi {
     @POST("user/v1/login")
     Observable<LoginBean> login(@FieldMap Map<String, Object> map);
 
+    //banner轮播
      @GET("share/v1/bannersShow")
      Observable<BannerBean> getBanner();
+
 }
