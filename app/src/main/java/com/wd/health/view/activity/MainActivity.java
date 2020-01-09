@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.wd.health.R;
@@ -34,7 +35,7 @@ import butterknife.OnClick;
 
 public class MainActivity extends Activity {
     private ViewPager viewPager;
-    private int[]images={R.drawable.xiaoyi,R.drawable.xiaoer,R.drawable.xiaosan,R.drawable.xiaosier,R.drawable.xiaowu,R.drawable.xiaoliu};
+    private int[]images={R.drawable.xiaowu,R.drawable.xiaoer,R.drawable.xiaosan,R.drawable.xiaosier,R.drawable.xiaoliuer};
     private List<ImageView> imageViews;//用来存放几个imageview的实例
     private LinearLayout li;
     private RelativeLayout rl;
