@@ -4,6 +4,11 @@ import com.wd.health.base.BasePresenter;
 import com.wd.health.contract.BannerContract;
 import com.wd.health.model.BannerModel;
 import com.wd.health.model.bean.BannerBean;
+import com.wd.health.model.bean.ConsultingListBean;
+import com.wd.health.model.bean.DrugBean;
+import com.wd.health.model.bean.HealthBean;
+import com.wd.health.model.bean.KeListBean;
+import com.wd.health.model.bean.SymptomBean;
 
 public class BannerPresenter extends BasePresenter<BannerContract.IView>implements BannerContract.IPresenter {
 
@@ -15,11 +20,36 @@ public class BannerPresenter extends BasePresenter<BannerContract.IView>implemen
     }
 
     @Override
-    public void getBanner(String path) {
-           bannerModel.getBanner(path, new BannerContract.IModdel.BannerCallBack() {
+    public void getBanner() {
+           bannerModel.getBanner( new BannerContract.IModdel.BannerCallBack() {
                @Override
                public void BannerSuccess(BannerBean bannerBean) {
                    getView().BannerSuccess(bannerBean);
+               }
+
+               @Override
+               public void SymptomSuccess(SymptomBean symptomBean) {
+
+               }
+
+               @Override
+               public void DrugSeccess(DrugBean drugBean) {
+
+               }
+
+               @Override
+               public void KeLianSeccess(KeListBean listBean) {
+
+               }
+
+               @Override
+               public void HealthSeccess(HealthBean healthBean) {
+
+               }
+
+               @Override
+               public void CondultingSeccess(ConsultingListBean consultingListBean) {
+
                }
 
                @Override
@@ -27,5 +57,204 @@ public class BannerPresenter extends BasePresenter<BannerContract.IView>implemen
                    getView().BannerFailure(mag);
                }
            });
+    }
+
+    @Override
+    public void Symptom() {
+        bannerModel.getSymptomSuccess( new BannerContract.IModdel.BannerCallBack() {
+            @Override
+            public void BannerSuccess(BannerBean bannerBean) {
+
+            }
+
+            @Override
+            public void SymptomSuccess(SymptomBean symptomBean) {
+                getView().SymptomSuccess(symptomBean);
+            }
+
+            @Override
+            public void DrugSeccess(DrugBean drugBean) {
+
+            }
+
+            @Override
+            public void KeLianSeccess(KeListBean listBean) {
+
+            }
+
+            @Override
+            public void HealthSeccess(HealthBean healthBean) {
+
+            }
+
+            @Override
+            public void CondultingSeccess(ConsultingListBean consultingListBean) {
+
+            }
+
+            @Override
+            public void BannerFailure(String mag) {
+                getView().BannerFailure(mag);
+            }
+        });
+    }
+
+    @Override
+    public void getDrug(int drugsCategoryId, int page, int count) {
+        bannerModel.getDrug(drugsCategoryId,page,count, new BannerContract.IModdel.BannerCallBack() {
+            @Override
+            public void BannerSuccess(BannerBean bannerBean) {
+
+            }
+
+            @Override
+            public void SymptomSuccess(SymptomBean symptomBean) {
+
+            }
+
+            @Override
+            public void DrugSeccess(DrugBean drugBean) {
+                getView().DrugSeccess(drugBean);
+            }
+
+            @Override
+            public void KeLianSeccess(KeListBean listBean) {
+
+            }
+
+            @Override
+            public void HealthSeccess(HealthBean healthBean) {
+
+            }
+
+            @Override
+            public void CondultingSeccess(ConsultingListBean consultingListBean) {
+
+            }
+
+            @Override
+            public void BannerFailure(String mag) {
+                getView().BannerFailure(mag);
+            }
+        });
+    }
+
+    @Override
+    public void getKeList() {
+        bannerModel.getKeList(new BannerContract.IModdel.BannerCallBack() {
+            @Override
+            public void BannerSuccess(BannerBean bannerBean) {
+
+            }
+
+            @Override
+            public void SymptomSuccess(SymptomBean symptomBean) {
+
+            }
+
+            @Override
+            public void DrugSeccess(DrugBean drugBean) {
+
+            }
+
+            @Override
+            public void KeLianSeccess(KeListBean listBean) {
+                getView().KeLianSeccess(listBean);
+            }
+
+            @Override
+            public void HealthSeccess(HealthBean healthBean) {
+
+            }
+
+            @Override
+            public void CondultingSeccess(ConsultingListBean consultingListBean) {
+
+            }
+
+            @Override
+            public void BannerFailure(String mag) {
+                getView().BannerFailure(mag);
+            }
+        });
+    }
+
+    @Override
+    public void getHealthSeccess() {
+        bannerModel.getHealthSeccess(new BannerContract.IModdel.BannerCallBack() {
+            @Override
+            public void BannerSuccess(BannerBean bannerBean) {
+
+            }
+
+            @Override
+            public void SymptomSuccess(SymptomBean symptomBean) {
+
+            }
+
+            @Override
+            public void DrugSeccess(DrugBean drugBean) {
+
+            }
+
+            @Override
+            public void KeLianSeccess(KeListBean listBean) {
+
+            }
+
+            @Override
+            public void HealthSeccess(HealthBean healthBean) {
+                getView().HealthSeccess(healthBean);
+            }
+
+            @Override
+            public void CondultingSeccess(ConsultingListBean consultingListBean) {
+
+            }
+
+            @Override
+            public void BannerFailure(String mag) {
+                getView().BannerFailure(mag);
+            }
+        });
+    }
+    @Override
+    public void getConsulting(int plateId, int page, int count) {
+        bannerModel.getConsulting(plateId,page,count,new BannerContract.IModdel.BannerCallBack() {
+            @Override
+            public void BannerSuccess(BannerBean bannerBean) {
+
+            }
+
+            @Override
+            public void SymptomSuccess(SymptomBean symptomBean) {
+
+            }
+
+            @Override
+            public void DrugSeccess(DrugBean drugBean) {
+
+            }
+
+            @Override
+            public void KeLianSeccess(KeListBean listBean) {
+
+            }
+
+            @Override
+            public void HealthSeccess(HealthBean healthBean) {
+
+            }
+
+            @Override
+            public void CondultingSeccess(ConsultingListBean consultingListBean) {
+                getView().CondultingSeccess(consultingListBean);
+            }
+
+            @Override
+            public void BannerFailure(String mag) {
+                getView().BannerFailure(mag);
+            }
+        });
     }
 }
