@@ -1,6 +1,7 @@
 package com.wd.health.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -17,6 +19,8 @@ import com.wd.health.model.bean.BannerBean;
 import com.wd.health.model.bean.HealthBean;
 import com.wd.health.model.bean.KeListBean;
 import com.wd.health.model.bean.SymptomBean;
+import com.wd.health.view.activity.FourActivity;
+import com.wd.health.view.activity.ShowTwoActivity;
 import com.xuezj.cardbanner.CardBanner;
 import com.xuezj.cardbanner.ImageData;
 import com.xuezj.cardbanner.imageloader.CardImageLoader;
@@ -91,18 +95,36 @@ public class ShowAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 }
             }
         }else if (itemViewType==TYPE_ONE){
-
+        if (viewHolder instanceof TwoHolder){
+                ((TwoHolder) viewHolder).relativeLayout01.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(context, ShowTwoActivity.class);
+                        context.startActivity(intent);
+                    }
+                });
+        }
 
         }else if (itemViewType==TYPE_TWO){
             if (result02 != null) {
-                if (viewHolder instanceof TwoHolder){
-                    LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
+                if (viewHolder instanceof ThreeHolder){
+                    GridLayoutManager linearLayoutManager = new GridLayoutManager(context,4);
                     linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-
+                    ((ThreeHolder) viewHolder).recyclerView.setLayoutManager(linearLayoutManager);
+                    ShowTwoAdapter showTwoAdapter = new ShowTwoAdapter(result02, context);
+                    ((ThreeHolder) viewHolder).recyclerView.setAdapter(showTwoAdapter);
                 }
             }
         }else if (itemViewType==TYPE_Thrww){
-
+        if (viewHolder instanceof FourHolder){
+            ((FourHolder) viewHolder).imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(context, FourActivity.class);
+                    context.startActivity(intent);
+                }
+            });
+        }
 
 
         }else if (itemViewType==TYPE_FOUR){
@@ -149,22 +171,31 @@ public class ShowAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
     class TwoHolder extends RecyclerView.ViewHolder {
 
+        private final RelativeLayout relativeLayout02;
+        private final RelativeLayout relativeLayout01;
+
         public TwoHolder(@NonNull View itemView) {
             super(itemView);
-          ImageView  img= inflate02.findViewById(R.id.image_drugs_02);
-          ImageView imageVie=inflate02.findViewById(R.id.image_common_01);
-        }
+            relativeLayout01 = inflate02.findViewById(R.id.relativelayout_01);
+            relativeLayout02 = inflate02.findViewById(R.id.relativelayout_02);
+         }
     }
     class ThreeHolder extends RecyclerView.ViewHolder {
+
+        private final RecyclerView recyclerView;
+
         public ThreeHolder(@NonNull View itemView) {
             super(itemView);
+            recyclerView = inflate03.findViewById(R.id.show_recycler_view_03);
         }
     }
     class FourHolder extends RecyclerView.ViewHolder {
 
+        private final ImageView imageView;
+
         public FourHolder(@NonNull View itemView) {
             super(itemView);
-            ImageView imageView=inflate04.findViewById(R.id.image_view);
+            imageView = inflate04.findViewById(R.id.image_view);
         }
     }
     class FiveHolder extends RecyclerView.ViewHolder {
