@@ -62,4 +62,6 @@ dependencies {
     implementation 'com.facebook.fresco:animated-webp:0.14.1'
     implementation 'com.facebook.fresco:imagepipeline-okhttp3:0.14.1'
     implementation 'me.relex:photodraweeview:1.1.2'
+    //轮播图
+    implementation 'com.xuezj.cardbanner:cardbanner:2.0.1'
 }

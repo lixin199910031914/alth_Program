@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_view"
+        android:textColor="#599FEF"
+        android:textSize="29sp"
+        android:padding="20dp"
+        android:text="健康评价"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/show_name_01"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="健康要闻"
+        android:textColor="#333333"
+        android:layout_height="40dp" />
+</LinearLayout>
