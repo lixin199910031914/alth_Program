@@ -46,7 +46,7 @@ public class CircleOfFriendsFragment extends BaseFragment<DiseaseCategoryPresent
     protected void initView() {
         super.initView();
          rlv = getView().findViewById(R.id.rlv);
-        rlv2 = getView().findViewById(R.id.rlv2);
+         rlv2 = getView().findViewById(R.id.rlv2);
 
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
