@@ -108,9 +108,11 @@ public class ShowAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }else if (itemViewType==TYPE_FOUR){
             if (result03 != null) {
                 if (viewHolder instanceof FiveHolder){
-                    GridLayoutManager linearLayoutManager = new GridLayoutManager(context,4);
-                    linearLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
+                    LinearLayoutManager linearLayoutManager = new LinearLayoutManager(context);
+                    linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
                     ((FiveHolder) viewHolder).textView.setText(result03.get(position).getName());
+                    ((FiveHolder) viewHolder).recyclerView.setLayoutManager(linearLayoutManager);
+
                 }
             }
         }
@@ -168,10 +170,12 @@ public class ShowAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     class FiveHolder extends RecyclerView.ViewHolder {
 
         private final TextView textView;
+        private final RecyclerView recyclerView;
 
         public FiveHolder(@NonNull View itemView) {
             super(itemView);
             textView = inflate05.findViewById(R.id.show_name_01);
+            recyclerView = inflate05.findViewById(R.id.show_recycler_view_02);
         }
     }
 }

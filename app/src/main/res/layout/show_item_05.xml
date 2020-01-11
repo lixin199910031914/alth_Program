@@ -22,4 +22,8 @@
         android:text="健康要闻"
         android:textColor="#333333"
         android:layout_height="40dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/show_recycler_view_02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>
