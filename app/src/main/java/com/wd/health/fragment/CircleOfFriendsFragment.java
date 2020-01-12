@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import com.wd.health.R;
 import com.wd.health.adapter.Disease.DiseaseAdapter;
@@ -28,6 +29,7 @@ public class CircleOfFriendsFragment extends BaseFragment<DiseaseCategoryPresent
     private static final String TAG = "CircleOfFriendsFragment";
     private RecyclerView rlv;
     private RecyclerView rlv2;
+    private TextView textView;
 
 
     @Override
@@ -47,7 +49,7 @@ public class CircleOfFriendsFragment extends BaseFragment<DiseaseCategoryPresent
         super.initView();
          rlv = getView().findViewById(R.id.rlv);
          rlv2 = getView().findViewById(R.id.rlv2);
-
+        textView = getView().findViewById(R.id.keshi);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
@@ -69,6 +71,7 @@ public class CircleOfFriendsFragment extends BaseFragment<DiseaseCategoryPresent
 
     @Override
     public void DepartSuccess(DepartmentBean departmentBean) {
+
         List<DepartmentBean.ResultBean> result = departmentBean.getResult();
         DiseaseAdapter diseaseAdapter = new DiseaseAdapter(getContext(), result);
         rlv.setAdapter(diseaseAdapter);
@@ -76,6 +79,11 @@ public class CircleOfFriendsFragment extends BaseFragment<DiseaseCategoryPresent
             @Override
             public void getId(int id) {
                 mPresenter.getDisease(id);
+            }
+
+            @Override
+            public void getName(String name) {
+                textView.setText(name);
             }
         });
 

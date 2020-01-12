@@ -42,6 +42,7 @@ public class DiseaseAdapter extends RecyclerView.Adapter<DiseaseAdapter.MyAdapte
             @Override
             public void onClick(View view) {
                 iCallBack.getId(resultBean.getId());
+                iCallBack.getName(resultBean.getDepartmentName());
             }
         });
     }
@@ -62,6 +63,7 @@ public class DiseaseAdapter extends RecyclerView.Adapter<DiseaseAdapter.MyAdapte
     }
     public   interface ICallBack{
         void  getId(int id);
+        void  getName(String name);
     }
     public    ICallBack iCallBack;
 
