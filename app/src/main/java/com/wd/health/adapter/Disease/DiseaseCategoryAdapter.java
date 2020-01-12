@@ -36,7 +36,7 @@ public class DiseaseCategoryAdapter extends RecyclerView.Adapter<DiseaseCategory
     public void onBindViewHolder(@NonNull MyAdapter myAdapter, int i) {
         DiseaseCategoryBean.ResultBean resultBean = list.get(i);
          myAdapter.name.setText(resultBean.getName());
-         myAdapter.department.setText(resultBean.getDepartmentId()+"");
+
     }
 
     @Override
