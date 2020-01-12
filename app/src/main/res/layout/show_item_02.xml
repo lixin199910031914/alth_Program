@@ -42,8 +42,8 @@
         android:id="@+id/relativelayout_01"
         android:orientation="vertical"
         android:background="@android:color/white"
-        android:layout_width="@dimen/dp_200"
-        android:layout_height="@dimen/dp_210">
+        android:layout_width="@dimen/dp_157"
+        android:layout_height="@dimen/dp_157">
 
         <ImageView
             android:layout_marginTop="@dimen/dp_20"
@@ -64,8 +64,8 @@
         android:orientation="vertical"
         android:layout_marginLeft="@dimen/dp_10"
         android:background="@android:color/white"
-        android:layout_width="@dimen/dp_200"
-        android:layout_height="@dimen/dp_210">
+        android:layout_width="@dimen/dp_157"
+        android:layout_height="@dimen/dp_157">
         <ImageView
             android:layout_marginTop="@dimen/dp_20"
             android:layout_marginLeft="@dimen/dp_10"
