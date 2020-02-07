@@ -1,14 +1,8 @@
-package com.wd.health.model.bean;
+package com.wd.health.bean;
 
 import java.util.List;
-/**
- *@describe(描述)：SymptomBean
- *@data（日期）: 2020/1/9 0009
- *@time（时间）: 下午 3:13
- *@author（作者）: 李昕
- **/
-//症状
-public class SymptomBean {
+
+public class DiseaseCategoryBean {
 
     /**
      * result : [{"departmentId":2,"id":17,"name":"颈椎病"},{"departmentId":2,"id":18,"name":"滑囊炎"},{"departmentId":2,"id":19,"name":"类风湿性关节炎"},{"departmentId":2,"id":20,"name":"退行性关节病"},{"departmentId":2,"id":21,"name":"颈椎骨关节炎"},{"departmentId":2,"id":22,"name":"椎关节强硬"},{"departmentId":2,"id":23,"name":"椎间盘突出"},{"departmentId":2,"id":24,"name":"背痛"},{"departmentId":2,"id":25,"name":"骨软化"},{"departmentId":2,"id":26,"name":"骨质疏松症"},{"departmentId":2,"id":27,"name":"重症肌无力"},{"departmentId":2,"id":28,"name":"腱鞘炎"},{"departmentId":2,"id":29,"name":"腱炎"},{"departmentId":2,"id":30,"name":"痛性痉挛"},{"departmentId":2,"id":31,"name":"疝"},{"departmentId":2,"id":32,"name":"骨折"},{"departmentId":2,"id":33,"name":"脱位"},{"departmentId":2,"id":34,"name":"扭伤"},{"departmentId":2,"id":35,"name":"肌肉拉伤"}]

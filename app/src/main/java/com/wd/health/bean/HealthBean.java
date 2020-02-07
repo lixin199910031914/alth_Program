@@ -1,4 +1,4 @@
-package com.wd.health.model.bean;
+package com.wd.health.bean;
 
 import java.util.List;
 

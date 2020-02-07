@@ -1,7 +1,7 @@
 package com.wd.health.contract;
 
 import com.wd.health.base.IBaseView;
-import com.wd.health.model.bean.LoginBean;
+import com.wd.health.bean.LoginBean;
 
 import java.util.Map;
 

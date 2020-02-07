@@ -7,19 +7,17 @@ package com.wd.health.fragment;
  **/
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.LinearLayout;
 
 import com.wd.health.R;
 import com.wd.health.adapter.ShowAdapter;
 import com.wd.health.base.BaseFragment;
-import com.wd.health.base.BasePresenter;
 import com.wd.health.contract.BannerContract;
-import com.wd.health.model.bean.BannerBean;
-import com.wd.health.model.bean.ConsultingListBean;
-import com.wd.health.model.bean.DrugBean;
-import com.wd.health.model.bean.HealthBean;
-import com.wd.health.model.bean.KeListBean;
-import com.wd.health.model.bean.SymptomBean;
+import com.wd.health.bean.BannerBean;
+import com.wd.health.bean.ConsultingListBean;
+import com.wd.health.bean.DrugBean;
+import com.wd.health.bean.HealthBean;
+import com.wd.health.bean.KeListBean;
+import com.wd.health.bean.SymptomBean;
 import com.wd.health.presenter.BannerPresenter;
 
 import java.util.List;

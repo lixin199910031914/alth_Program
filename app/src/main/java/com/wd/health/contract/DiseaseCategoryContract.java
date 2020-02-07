@@ -1,8 +1,8 @@
 package com.wd.health.contract;
 
 import com.wd.health.base.IBaseView;
-import com.wd.health.model.bean.DepartmentBean;
-import com.wd.health.model.bean.DiseaseCategoryBean;
+import com.wd.health.bean.DepartmentBean;
+import com.wd.health.bean.DiseaseCategoryBean;
 
 public interface DiseaseCategoryContract {
     interface IView extends IBaseView {

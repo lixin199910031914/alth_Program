@@ -1,29 +1,21 @@
 package com.wd.health.fragment;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
 
 import com.wd.health.R;
 import com.wd.health.adapter.Disease.DiseaseAdapter;
 import com.wd.health.adapter.Disease.DiseaseCategoryAdapter;
 import com.wd.health.base.BaseFragment;
-import com.wd.health.base.BasePresenter;
 import com.wd.health.contract.DiseaseCategoryContract;
-import com.wd.health.model.bean.DepartmentBean;
-import com.wd.health.model.bean.DiseaseCategoryBean;
+import com.wd.health.bean.DepartmentBean;
+import com.wd.health.bean.DiseaseCategoryBean;
 import com.wd.health.presenter.DiseaseCategoryPresenter;
 
-import java.util.HashMap;
 import java.util.List;
-
-import butterknife.OnClick;
 
 public class CircleOfFriendsFragment extends BaseFragment<DiseaseCategoryPresenter> implements DiseaseCategoryContract.IView {
     private static final String TAG = "CircleOfFriendsFragment";

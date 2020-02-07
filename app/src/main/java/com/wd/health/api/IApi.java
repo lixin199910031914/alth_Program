@@ -1,14 +1,15 @@
-package com.wd.health.model.api;
+package com.wd.health.api;
 
-import com.wd.health.model.bean.DepartmentBean;
-import com.wd.health.model.bean.DiseaseCategoryBean;
-import com.wd.health.model.bean.BannerBean;
-import com.wd.health.model.bean.ConsultingListBean;
-import com.wd.health.model.bean.DrugBean;
-import com.wd.health.model.bean.HealthBean;
-import com.wd.health.model.bean.KeListBean;
-import com.wd.health.model.bean.LoginBean;
-import com.wd.health.model.bean.SymptomBean;
+import com.wd.health.bean.DepartmentBean;
+import com.wd.health.bean.DiseaseCategoryBean;
+import com.wd.health.bean.BannerBean;
+import com.wd.health.bean.ConsultingListBean;
+import com.wd.health.bean.DrugBean;
+import com.wd.health.bean.HealthBean;
+import com.wd.health.bean.JianKangBean;
+import com.wd.health.bean.KeListBean;
+import com.wd.health.bean.LoginBean;
+import com.wd.health.bean.SymptomBean;
 
 import java.util.Map;
 
@@ -49,4 +50,7 @@ public interface IApi {
     //根据资讯板块查询资讯列表
     @GET("share/information/v1/findInformationList")
     Observable<ConsultingListBean> getConsultingList(int plateId,int page, int count);
+    //健康讲堂类目
+    @GET("user/video/v1/findVideoCategoryList")
+    Observable<JianKangBean> getJianKang();
 }

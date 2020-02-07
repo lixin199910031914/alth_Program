@@ -3,13 +3,9 @@ package com.wd.health.view.activity;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
@@ -18,20 +14,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.wd.health.R;
-import com.wd.health.base.BaseActivity;
-import com.wd.health.contract.ILoginContract;
-import com.wd.health.model.bean.LoginBean;
-import com.wd.health.presenter.LoginPresenter;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-
-import butterknife.OnClick;
 
 public class MainActivity extends Activity {
     private ViewPager viewPager;

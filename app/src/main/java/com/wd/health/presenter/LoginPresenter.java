@@ -3,7 +3,7 @@ package com.wd.health.presenter;
 import com.wd.health.base.BasePresenter;
 import com.wd.health.contract.ILoginContract;
 import com.wd.health.model.LoginModel;
-import com.wd.health.model.bean.LoginBean;
+import com.wd.health.bean.LoginBean;
 
 import java.util.Map;
 

@@ -9,8 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.wd.health.R;
-import com.wd.health.model.bean.DepartmentBean;
-import com.wd.health.model.bean.DiseaseCategoryBean;
+import com.wd.health.bean.DiseaseCategoryBean;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -2,12 +2,12 @@
 package com.wd.health.contract;
 
 import com.wd.health.base.IBaseView;
-import com.wd.health.model.bean.BannerBean;
-import com.wd.health.model.bean.ConsultingListBean;
-import com.wd.health.model.bean.DrugBean;
-import com.wd.health.model.bean.HealthBean;
-import com.wd.health.model.bean.KeListBean;
-import com.wd.health.model.bean.SymptomBean;
+import com.wd.health.bean.BannerBean;
+import com.wd.health.bean.ConsultingListBean;
+import com.wd.health.bean.DrugBean;
+import com.wd.health.bean.HealthBean;
+import com.wd.health.bean.KeListBean;
+import com.wd.health.bean.SymptomBean;
 
 public interface BannerContract {
         interface IView extends IBaseView {

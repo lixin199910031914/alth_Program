@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.wd.health.R;
-import com.wd.health.model.bean.KeListBean;
+import com.wd.health.bean.KeListBean;
 
 import java.util.List;
 

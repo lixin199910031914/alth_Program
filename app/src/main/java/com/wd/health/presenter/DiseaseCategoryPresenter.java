@@ -3,8 +3,8 @@ package com.wd.health.presenter;
 import com.wd.health.base.BasePresenter;
 import com.wd.health.contract.DiseaseCategoryContract;
 import com.wd.health.model.DiseaseCategoryModel;
-import com.wd.health.model.bean.DepartmentBean;
-import com.wd.health.model.bean.DiseaseCategoryBean;
+import com.wd.health.bean.DepartmentBean;
+import com.wd.health.bean.DiseaseCategoryBean;
 
 public class DiseaseCategoryPresenter extends BasePresenter<DiseaseCategoryContract.IView>implements DiseaseCategoryContract.IPresenter {
 

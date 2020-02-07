@@ -15,10 +15,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.wd.health.R;
-import com.wd.health.model.bean.BannerBean;
-import com.wd.health.model.bean.HealthBean;
-import com.wd.health.model.bean.KeListBean;
-import com.wd.health.model.bean.SymptomBean;
+import com.wd.health.bean.BannerBean;
+import com.wd.health.bean.HealthBean;
+import com.wd.health.bean.KeListBean;
 import com.wd.health.view.activity.FourActivity;
 import com.wd.health.view.activity.ShowTwoActivity;
 import com.xuezj.cardbanner.CardBanner;

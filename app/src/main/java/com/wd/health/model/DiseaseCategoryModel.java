@@ -1,9 +1,8 @@
 package com.wd.health.model;
 
-import com.wd.health.R;
 import com.wd.health.contract.DiseaseCategoryContract;
-import com.wd.health.model.bean.DepartmentBean;
-import com.wd.health.model.bean.DiseaseCategoryBean;
+import com.wd.health.bean.DepartmentBean;
+import com.wd.health.bean.DiseaseCategoryBean;
 import com.wd.health.utils.CommonObserver;
 import com.wd.health.utils.CommonSchedulers;
 import com.wd.health.utils.RetrofitManager;

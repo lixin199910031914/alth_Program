@@ -2,7 +2,7 @@ package com.wd.health.utils;
 
 
 import com.wd.health.app.Constant;
-import com.wd.health.model.api.IApi;
+import com.wd.health.api.IApi;
 
 import java.util.concurrent.TimeUnit;
 
