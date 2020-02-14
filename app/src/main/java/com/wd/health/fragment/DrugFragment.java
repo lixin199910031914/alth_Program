@@ -16,6 +16,7 @@ import com.wd.health.bean.DiseaseCategoryBean;
 import com.wd.health.contract.DiseaseCategoryContract;
 import com.wd.health.presenter.DiseaseCategoryPresenter;
 
+
 import java.util.List;
 
 public class DrugFragment extends BaseFragment<DiseaseCategoryPresenter> implements DiseaseCategoryContract.IView {
