@@ -20,6 +20,7 @@ import com.wd.health.presenter.DiseaseCategoryPresenter;
 
 import java.util.List;
 
+
 public class DrugFragment extends BaseFragment<DiseaseCategoryPresenter> implements DiseaseCategoryContract.IView {
     private static final String TAG = "CircleOfFriendsFragment";
 
