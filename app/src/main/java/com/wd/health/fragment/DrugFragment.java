@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 
 import com.wd.health.R;
+
 import com.wd.health.adapter.Disease.DiseaseAdapter;
 import com.wd.health.adapter.Disease.DiseaseCategoryAdapter;
 import com.wd.health.base.BaseFragment;
